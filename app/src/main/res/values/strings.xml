@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">Tris</string>
+    <string name="benvenuto_a_al_giuoco_del_tris">Benvenuti al gioco del tris!</string>
+    <string name="modalit_di_gioco">Modalità di gioco</string>
+    <string name="_1_player">1 player</string>
+    <string name="_2_players">2 players</string>
+    <string name="computer_war">Computer War</string>
+    <string name="statistiche">Statistiche</string>
+    <string name="regole">Regole</string>
+    <string name="regole_text">Il gioco consiste nell\'inserire in fila tre segni in orizzontale, verticale o diagonale prima dell\'avversario.\nFacile no?</string>
+    <string name="reset">Reset</string>
+    <string name="vittorie">Vittorie:</string>
+    <string name="pareggi">Pareggi:</string>
+    <string name="sconfitte">Sconfitte:</string>
+    <string name="_0">0</string>
+    <string name="nicola">Nicola:</string>
+    <string name="fabrizio">Fabrizio:</string>
+    <string name="vittorie_x">Vittorie X:</string>
+    <string name="vittorie_o">Vittorie O:</string>
+    <string name="tris_grid">tris grid</string>
+    <string name="_00">00</string>
+    <string name="_01">01</string>
+    <string name="_02">02</string>
+    <string name="_10">10</string>
+    <string name="_11">11</string>
+    <string name="_12">12</string>
+    <string name="_20">20</string>
+    <string name="_21">21</string>
+    <string name="_22">22</string>
+    <string name="by_riccardo_parente">by Riccardo Parente</string>
+    <string name="inizia_guerra">Inizia guerra!</string>
+    <string name="ricomincia">Ricomincia</string>
+    <string name="nome_giocatore">Nome giocatore</string>
+    <string name="gioca">Gioca</string>
+    <string name="annulla">Annulla</string>
+    <string name="giocatore_1">Giocatore 1</string>
+    <string name="giocatore_2">Giocatore 2</string>
+    <string name="cerca">Cerca</string>
+    <string name="nome_giocatore_1">Nome giocatore 1</string>
+    <string name="nome_giocatore_2">Nome giocatore 2</string>
+    <string-array name="stat_choice">
+        <item>1 Player</item>
+        <item>2 Players</item>
+        <item>Computer War</item>
+    </string-array>
+</resources>

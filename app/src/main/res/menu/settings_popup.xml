@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/stats" android:title="@string/statistiche"/>
+    <item
+        android:id="@+id/regole"
+        android:actionLayout="@android:layout/two_line_list_item"
+        android:title="@string/regole"></item>
+</menu>

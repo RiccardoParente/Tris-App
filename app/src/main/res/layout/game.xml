@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1B8F3C"
+    android:clickable="false">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/back_button"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="11dp"
+        android:background="@drawable/back_arrow"
+        app:layout_constraintBottom_toBottomOf="@+id/toolbar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/tris_grid"
+        android:layout_width="355dp"
+        android:layout_height="358dp"
+        android:contentDescription="@string/tris_grid"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        app:layout_constraintVertical_bias="0.3"
+        app:srcCompat="@drawable/tris_board" />
+
+    <TextView
+        android:id="@+id/turno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tris_grid"
+        app:layout_constraintVertical_bias="0.65" />
+
+    <androidx.gridlayout.widget.GridLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:alignmentMode="alignMargins"
+        app:columnCount="3"
+        app:layout_constraintBottom_toBottomOf="@+id/tris_grid"
+        app:layout_constraintEnd_toEndOf="@+id/tris_grid"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tris_grid"
+        app:layout_constraintTop_toTopOf="@+id/tris_grid"
+        app:layout_constraintVertical_bias="0.0"
+        app:rowCount="3">
+
+        <ImageButton
+            android:id="@+id/button00"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="#00FFFFFF"
+            android:clickable="false"
+            android:contentDescription="@string/_00"
+            android:onClick="muovi"
+            android:src="@android:color/transparent"
+            app:layout_column="0"
+            app:layout_columnWeight="1"
+            app:layout_gravity="fill_horizontal|fill_vertical"
+            app:layout_row="0"
+            app:layout_rowWeight="1" />
+
+        <ImageButton
+            android:id="@+id/button01"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="#00FFFFFF"
+            android:clickable="false"
+            android:contentDescription="@string/_01"
+            android:onClick="muovi"
+            android:src="@android:color/transparent"
+            app:layout_column="1"
+            app:layout_columnWeight="1"
+            app:layout_gravity="fill_horizontal|fill_vertical"
+            app:layout_row="0"
+            app:layout_rowWeight="1" />
+
+        <ImageButton
+            android:id="@+id/button02"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="#00FFFFFF"
+            android:clickable="false"
+            android:contentDescription="@string/_02"
+            android:onClick="muovi"
+            android:src="@android:color/transparent"
+            app:layout_column="2"
+            app:layout_columnWeight="1"
+            app:layout_gravity="fill_horizontal|fill_vertical"
+            app:layout_row="0"
+            app:layout_rowWeight="1" />
+
+        <ImageButton
+            android:id="@+id/button10"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="#00FFFFFF"
+            android:clickable="false"
+            android:contentDescription="@string/_10"
+            android:onClick="muovi"
+            android:src="@android:color/transparent"
+            app:layout_column="0"
+            app:layout_columnWeight="1"
+            app:layout_gravity="fill_horizontal|fill_vertical"
+            app:layout_row="1"
+            app:layout_rowWeight="1" />
+
+        <ImageButton
+            android:id="@+id/button11"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="#00FFFFFF"
+            android:clickable="false"
+            android:contentDescription="@string/_11"
+            android:onClick="muovi"
+            android:src="@android:color/transparent"
+            app:layout_column="1"
+            app:layout_columnWeight="1"
+            app:layout_gravity="fill_horizontal|fill_vertical"
+            app:layout_row="1"
+            app:layout_rowWeight="1" />
+
+        <ImageButton
+            android:id="@+id/button12"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="#00FFFFFF"
+            android:clickable="false"
+            android:contentDescription="@string/_12"
+            android:onClick="muovi"
+            android:src="@android:color/transparent"
+            app:layout_column="2"
+            app:layout_columnWeight="1"
+            app:layout_gravity="fill_horizontal|fill_vertical"
+            app:layout_row="1"
+            app:layout_rowWeight="1" />
+
+        <ImageButton
+            android:id="@+id/button20"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="#00FFFFFF"
+            android:clickable="false"
+            android:contentDescription="@string/_20"
+            android:onClick="muovi"
+            android:src="@android:color/transparent"
+            app:layout_column="0"
+            app:layout_columnWeight="1"
+            app:layout_gravity="fill_horizontal|fill_vertical"
+            app:layout_row="2"
+            app:layout_rowWeight="1" />
+
+        <ImageButton
+            android:id="@+id/button21"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="#00FFFFFF"
+            android:clickable="false"
+            android:contentDescription="@string/_21"
+            android:onClick="muovi"
+            android:src="@android:color/transparent"
+            app:layout_column="1"
+            app:layout_columnWeight="1"
+            app:layout_gravity="fill_horizontal|fill_vertical"
+            app:layout_row="2"
+            app:layout_rowWeight="1" />
+
+        <ImageButton
+            android:id="@+id/button22"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="#00FFFFFF"
+            android:clickable="false"
+            android:contentDescription="@string/_22"
+            android:onClick="muovi"
+            android:src="@android:color/transparent"
+            app:layout_column="2"
+            app:layout_columnWeight="1"
+            app:layout_gravity="fill_horizontal|fill_vertical"
+            app:layout_row="2"
+            app:layout_rowWeight="1" />
+
+    </androidx.gridlayout.widget.GridLayout>
+
+    <Button
+        android:id="@+id/start_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:onClick="start"
+        android:text="@string/ricomincia"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tris_grid" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
